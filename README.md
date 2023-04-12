@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# RieraTex-Ecommerce-System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
 
-## About Laravel
+Riera-Textiles is a Kenyan based clothing store that manufactures clothes and sells in bulk to companies and individuals. This application will  provide Riera-Texitles, short for Riera-Tex, a great way to expand their business and reach more customers. By providing both modern and traditional methods of shopping, the company can cater to a wide range of customers and improve their customer base.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The ability to browse through all products, add products to cart and wishlist, and enter shipping details and make payments provides a convenient shopping experience for customers. Additionally, the ability to create new accounts or log in to existing ones allows for personalized and efficient shopping.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+On the admin side, the ability to add and update products, manage orders, and view sales data provides the company with valuable tools for improving their operations and sales. The ability to track the status of delivery for orders also helps ensure customer satisfaction and a positive shopping experience.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Key Features
 
-## Learning Laravel
+* Home screen
+     - Once the user enters the application the first page is the home page. Which provides an overview of Riera-Tex.
+     - The navigation bar contains four hyperlinks to different sections(home, account, wishlist and cart).
+     - There is a button that directs clients to product overview page where they can view all the clothes that are onsale.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Product overview
+     - This page shows all products available in sale.
+  
+* Account
+     - This page shows the current configuration of the user's profile.
+     - It shows alist of users orders and the status for the user to track the status of the order.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* Cart
+     - This page enables users to view items in the cart and remove items.
+     - There is a cart summary of the total amount of items in the cart and the total amount the items cost.
+     - There is a 'proceed to checkout' button that directs the user to the checkout page.
+     - If there are no items in the cart, the page will show a message indicating that there is no item in the cart.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Wishlist
+     - This page is only accessible to a customer that is logged in to their account.
+     - This page enables users to view items in their wishlist and has an option to remove items.
+     - There is an add to cart button for the user to add the item on the whishlist to cart.
+     - If there are no items in the wishlist it will show a message indicating that there is no item in the cart.
 
-## Laravel Sponsors
+* Checkout
+     - the checkout page has an option for the user to enter their peronal details on where they wish to have the item delivered.
+     - The user can enter their card details and make payments.
+     - If the payment was successfull the application will return a suceess message with the order Id.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* Admin
+     - On the right side of the admin page is a navigation bar that contains four hyperlinks to different pages(products, color,category,orders).
+     - The produt page is where the admin can add new products to the database, update product information and view all the products that have been entered into the database.
+     - The orders page is where the admin can view all the products that have been ordered, view the status of the order and change the status of the order.
+     - In the category page the admin can create a new category or delete it. A list of all categories of products are displayed.
+     - In the color page the admin can create a new color or delete it. A list of all categories of products are displayed.
+     - Logout button fot the admin to signout.
