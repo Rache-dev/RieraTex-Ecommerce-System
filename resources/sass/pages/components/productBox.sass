@@ -1,0 +1,134 @@
+.product-box
+    border-radius: 3px
+    background: #fff
+    overflow: hidden
+    box-shadow: 0 8px 40px 0 rgba(49, 32, 138, 5%)
+    text-align: start
+    //max-width: 270px    
+    transition: all 0.6s ease
+
+    &:hover
+        box-shadow: 0 10px 50px 2px rgba(0, 0, 0, 15%)
+        .image
+            //background: linear-gradient(to bottom right, #6100ff, #d38eff)  
+
+            .add-to-wishlist 
+                display: flex 
+                align-items: center
+                justify-content: center
+                position: absolute 
+                top: 10px
+                right: 10px
+                background: #570bd7
+                color: #fff            
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                transition: all 0.3s ease
+                border: none
+                cursor: pointer
+                &:hover
+                    background: #fff
+                    color: #570bd7
+                    .add-to-wishlist-text
+                        display: block
+                        padding: 6px 12px
+                        background: #444
+                        color: #fff
+                        font-size: 12px
+                        font-family: poppins
+                        border-radius: 3px
+                        position: absolute
+                        transform: translate(0, -50%)
+                        top: 10px
+                        right: 10%
+                        
+
+            .add-to-cart 
+                display: flex 
+                align-items: center
+                justify-content: center
+                position: absolute 
+                top: 50px
+                right: 10px
+                background: #570bd7
+                color: #fff            
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                transition: all 0.3s ease
+                border: none
+                cursor: pointer
+                &:hover
+                    background: #fff
+                    color: #570bd7
+
+    
+
+    .image
+        background: #f6f7fb
+        height: 350px
+        width:100%
+        max-width: 100%
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: center
+        margin-bottom: 10px
+        transition: all 0.4s ease
+        img
+            max-height: 100%
+            max-width: 100%
+            height: 100%
+            object-fit: cover 
+
+        .add-to-wishlist 
+            display: none
+
+        .add-to-cart
+            display: none
+
+        .add-to-wishlist-text
+            display: none
+
+    a
+        text-decoration: none
+
+
+    .product-title
+        font-size: 14px
+        line-height: 18px
+        font-weight: 600
+        color: #000
+        margin-bottom: 5px
+        margin-top: 15px
+        margin-left: 15px
+        text-transform: capitalize
+
+    .color-plateletes
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 8px
+        margin-bottom: 10px
+        .color-platelete
+            width: 20px
+            height: 5px
+            border-radius: 10px
+            background: #000
+    .product-category
+        color: #6f6f6f
+        font-style: italic
+        font-weight: 500
+        text-transform: capitalize
+        margin-bottom: 5px
+        margin-left: 15px
+        font-size: 14px
+
+    .product-price
+        font-size: 18px
+        font-weight: bold
+        margin-bottom: 15px
+        color: #000
+        line-height: 26px
+        margin-left: 15px

@@ -1,0 +1,212 @@
+.cart-page
+    background: #fafafa
+    padding: 70px 15px
+
+    .cart-wrapper1
+        display: flex
+        justify-content: center
+    .cart
+        width: 1200px
+        display: grid
+        //place-self: center
+        grid-template-columns: 1fr 330px
+        gap: 20px
+    
+        .cart-container
+            background: #fff
+            border-radius: 5px
+            padding: 16px
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.09)
+
+        h2
+            font-size: 1.25rem
+            font-weight: 500
+            padding: 5px 16px
+    
+    .cart-wrapper
+        padding: 16px 16px
+        border-top: 1px solid #eaeaea
+
+        .label
+            color: #75757a
+            margin-right: 4px
+
+        .cart-description
+            display: flex
+            flex-direction: row
+            background: #fff
+            
+            .img
+                width: 15%
+                img
+                  width: 100px
+            .card-mtm
+                width: 60%
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                h3
+                    font-size: 18px
+                    font-weight: 500
+                    color: $primary
+                p
+                    margin-top: 4px
+                    font-size: 14px
+                    text-transform: capitalize
+
+                    
+
+                .xs
+                    font-size: 12px
+            .price
+                width: 25%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                font-size: 1.25rem
+                text-align: right
+                font-weight: 500
+        .bt
+            padding-top: 8px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            .btn-deleteCart
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                font-size: 0.875
+                color: $primary-dark
+                text-transform: uppercase            
+                font-family: poppins
+                background: none
+                border: none
+                padding: 4px 8px
+                transition: all 0.3s ease
+                font-weight: 700
+                &:hover
+                    background: $primary
+                    color: #fff
+                    border-radius: 5px
+                    font-weight: 500
+
+    .cart-summary
+        background:  #fff
+        border-radius: 5px
+        padding: 16px
+        position: sticky
+        padding-bottom: 25px 
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.09)
+
+        h4
+            text-transform: uppercase
+            font-weight: 600
+            padding: 8px
+            border-bottom: 1px solid #ededed
+
+        .cart-total
+            padding: 8px 0
+            margin: 0 8px
+            border-bottom: 1px solid #ededed
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+
+            p
+                font-size: 14px
+
+            h5
+                font-weight: 600
+                font-size: 14px
+                
+            .st
+                font-weight: 600
+
+            .sh
+                font-size: 20px
+                font-weight: 600
+
+        .df
+            padding: 12px 0
+            margin: 0 8px
+            border-bottom: 1px solid #ededed
+            font-size: 14px
+
+.cart-btn
+    padding: 10px 35px
+    border-radius: none
+    border: none
+    cursor: pointer
+    font-family: 'Poppins', sans-serif
+    transition: all 0.3s ease
+    text-decoration: none
+    width: 100%
+    border-radius: 5px
+    margin-top: 20px
+    display: flex            
+    justify-content: center
+.empty-cart 
+    padding: 20px 0
+    
+
+
+// .cart-page
+//     padding: 70px 15px
+//     background: #fafafa
+
+//     .cart-table
+//         background: #fff
+//         border-radius: 8px
+//         box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.03)
+//         overflow: hidden
+
+//     .table
+//         width: 100%
+//         text-align: left
+//         border-collapse: collapse
+
+//         thead
+//             tr
+//                 background: $primary
+//                 color: #fff
+//                 th
+//                     padding: 10px
+//                     font-weight: 400
+//                     font-size: 18px
+
+//         tbody
+//             tr
+//                 td
+//                     padding: 10px
+//                     font-weight: 400
+//                     font-size: 18px
+
+//                     .cart-item-title
+//                         font-weight: 500
+//                         margin-bottom: 10px
+//                         text-decoration: none
+//                         color: $primary
+//                         display: flex
+//                         align-items: center
+//                         gap: 20px
+
+//                         img
+//                             width: 50px
+//                     .btn-deleteCart
+//                         display: flex
+//                         align-content: center
+//             .cart-total
+//                 td
+//                     font-size: 20px
+//                     font-weight: 600
+//                     color: $primary-dark
+
+//     .cart-actions
+//         display: flex
+//         justify-content: center
+//         padding: 30px 0          

@@ -1,0 +1,103 @@
+.product-page
+    padding: 70px 15px
+    .product-page-row
+        display: flex
+
+        .product-page-image
+            width: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            
+        
+        .product-page-details
+            width: 50%
+
+            .p-title
+                color: $primary-dark
+                font-weight: 700
+                font-size: 24px
+                margin-bottom: 20px
+                position: relative
+                text-transform: capitalize
+
+                &::after
+                    content: " "
+                    position: absolute
+                    width: 100px
+                    left: 8%
+                    bottom: -4px
+                    height: 4px
+                    background: $primary-dark
+                    border-radius: 3px
+            
+            .p-price
+                color: $pink
+                font-weight: 600
+                font-size: 20px
+                margin-bottom: 5px
+
+            .p-category
+                font-weight: 400 !important
+                font-size: 16px
+                color: $grey
+                font-style: italic
+                margin-bottom: 10px
+                text-transform: capitalize
+
+            .p-description
+                font-size: 16px
+                font-weight: 400
+                color: #9e9e9e
+                margin-bottom: 20px
+
+            .p-form
+                margin-bottom: 20px
+                label
+                    font-size: 16px
+                    font-weight: 600
+                    display: inline-block
+                    width: 100px
+                .p-colors
+                    margin-bottom: 15px
+                    select
+                        min-width: 200px
+                        height: 35px
+                        border-radius: 200px
+                        padding: 5px 20px
+                        text-align: center
+                        background: #fff
+                        border: 2px solid $primary-dark
+                        color: $primary-dark
+                        font-size: 15px
+                        font-weight: 600
+                        appearance: none
+                        font-family: poppins
+
+                .p-quantity
+                    input
+                        min-width: 200px !important
+                        height: 35px
+                        border-radius: 200px
+                        padding: 5px 20px
+                        text-align: center
+                        background: #fff
+                        border: 2px solid $primary-dark
+                        color: $primary-dark
+                        font-size: 15px
+                        font-weight: 600
+                        appearance: none
+                        font-family: poppins
+            .btn-cart
+                font-weight: 600
+                letter-spacing: 0.5px
+                background: $pink
+                color: #fff
+                height: 40px
+                width: 100%
+                margin-top: 10px
+                transition: all 0.4s ease
+
+                &:hover
+                    background: $primary
